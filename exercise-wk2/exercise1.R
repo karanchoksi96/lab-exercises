@@ -73,6 +73,9 @@ vector.3 <- c(9, 0)
 print(CombineVectors(vector.1, vector.2, vector.3))
 # Write a function `CapsTime` that takes in a vector of names of courses you're taking, ex "Informatics 201" and removes all capital letters
 CapsTime <- function(v.1) {
+  print(gsub("[A-Z]","",v.1))
   
 }
+
+CapsTime(c("Info201", "CSE373", "Info360"))
 
